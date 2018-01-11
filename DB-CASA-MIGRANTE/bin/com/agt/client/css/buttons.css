@@ -1,0 +1,107 @@
+.button {
+   	-fx-border: 1px solid rgba(0, 0, 0, 0.1);
+    -fx-border-radius: 2px;
+    
+    -fx-text-decoration: none;
+    -fx-text-transform: uppercase;
+    -fx-color: #666;
+    
+    -fx-font-family: Arial, sans-serif;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    
+    -fx-margin: 0 3px;
+   	-fx-padding: 7px 12px;
+    
+    -fx-background: #f1f1f1;
+    -fx-background-image: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#f5f5f5), to(#f1f1f1));
+    -fx-background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1); 
+    -fx-background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1); 
+    -fx-background-image: -ms-linear-gradient(top, #f5f5f5, #f1f1f1); 
+    -fx-background-image: -o-linear-gradient(top, #f5f5f5, #f1f1f1); 
+    -fx-background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    -fx-transition: border-color .218s;
+}
+
+.button:hover {
+    -fx-transition: border-color .218s;
+    -fx-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    -fx-border-color: #939393;
+    -fx-color: #333;
+}
+
+.button:active {
+    -fx-border-color: #444444;
+
+    -fx-background: #f5f5f5;
+    -fx-background-image: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#f1f1f1), to(#f5f5f5));
+    -fx-background-image: -webkit-linear-gradient(top, #f1f1f1, #f5f5f5); 
+    -fx-background-image: -moz-linear-gradient(top, #f1f1f1, #f5f5f5); 
+    -fx-background-image: -ms-linear-gradient(top, #f1f1f1, #f5f5f5); 
+    -fx-background-image: -o-linear-gradient(top, #f1f1f1, #f5f5f5); 
+    -fx-background-image: linear-gradient(top, #f1f1f1, #f5f5f5);
+}
+
+.button.blue {
+    -fx-color: #fff;
+    -fx-border-color: #427ede;
+    -fx-background: #4787ed;
+    -fx-background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe), to(#4787ed));
+    -fx-background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed); 
+    -fx-background-image: -moz-linear-gradient(top, #4d90fe, #4787ed); 
+    -fx-background-image: -ms-linear-gradient(top, #4d90fe, #4787ed); 
+    -fx-background-image: -o-linear-gradient(top, #4d90fe, #4787ed); 
+    -fx-background-image: linear-gradient(top, #4d90fe, #4787ed);
+   	-fx-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button.blue:hover {
+    -fx-border-color: #2f5bb7;
+    -fx-background: #357ae8;
+    -fx-background-image: -webkit-gradient(linear, left top, left bottom, from(#4d90fe), to(#357ae8));
+    -fx-background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8); 
+    -fx-background-image: -moz-linear-gradient(top, #4d90fe, #357ae8); 
+    -fx-background-image: -ms-linear-gradient(top, #4d90fe, #357ae8); 
+    -fx-background-image: -o-linear-gradient(top, #4d90fe, #357ae8); 
+    -fx-background-image: linear-gradient(top, #4d90fe, #357ae8);
+}
+
+.button.blue:active {
+    -fx-background: #4d90fe;
+}
+
+.button.red {
+   -fx-color: #fff;
+    -fx-border: 1px solid transparent;
+    
+    -fx-background: #d14836;
+    -fx-background-image: -webkit-gradient(linear, left top, left bottom, from(#dd4b39), to(#d14836));
+    -fx-background-image: -webkit-linear-gradient(top, #dd4b39, #d14836); 
+    -fx-background-image: -moz-linear-gradient(top, #dd4b39, #d14836); 
+    -fx-background-image: -ms-linear-gradient(top, #dd4b39, #d14836); 
+    -fx-background-image: -o-linear-gradient(top, #dd4b39, #d14836); 
+    -fx-background-image: linear-gradient(top, #dd4b39, #d14836);
+    
+  
+    -fx-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    
+    -fx-text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.button.red:hover {
+   -fx-border-color: #B0281A;
+    -fx-border-bottom: 1px solid #af301f;
+
+    -fx-background: #c53727;
+    -fx-background-image: -webkit-gradient(linear, left top, left bottom, from(#dd4b39), to(#c53727));
+    -fx-background-image: -webkit-linear-gradient(top, #dd4b39, #c53727); 
+    -fx-background-image: -moz-linear-gradient(top, #dd4b39, #c53727); 
+    -fx-background-image: -ms-linear-gradient(top, #dd4b39, #c53727); 
+    -fx-background-image: -o-linear-gradient(top, #dd4b39, #c53727); 
+    -fx--image: linear-gradient(top, #dd4b39, #c53727);
+}
+
+.button.red:active {
+   
+    -fx-box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3);
+}

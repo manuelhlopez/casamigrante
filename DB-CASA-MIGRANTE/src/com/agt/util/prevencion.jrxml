@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.1.0.final using JasperReports Library version 6.1.0  -->
+<!-- 2017-06-15T00:35:22 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cna" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="10" whenResourceMissingType="Empty" uuid="35aa83c0-d613-408c-9028-07bc5eb61fa4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="false"/>
+	<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="municipalidad" class="java.lang.String"/>
+	<parameter name="departamento" class="java.lang.String"/>
+	<parameter name="municipio" class="java.lang.String"/>
+	<parameter name="tecnico" class="java.lang.String"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<parameter name="institucion" class="java.lang.String"/>
+	<parameter name="lugar" class="java.lang.String"/>
+	<parameter name="objetivo" class="java.lang.String"/>
+	<parameter name="presupuesto" class="java.lang.String"/>
+	<parameter name="resultados" class="java.lang.String"/>
+	<parameter name="observaciones" class="java.lang.String"/>
+	<parameter name="ninios" class="java.lang.String"/>
+	<parameter name="adolescentes" class="java.lang.String"/>
+	<parameter name="encargados" class="java.lang.String"/>
+	<parameter name="tecnicos" class="java.lang.String"/>
+	<parameter name="funcionarios" class="java.lang.String"/>
+	<parameter name="servidores" class="java.lang.String"/>
+	<parameter name="otros" class="java.lang.String"/>
+	<parameter name="otro" class="java.lang.String"/>
+	<parameter name="id" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="actividad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="400" height="20" uuid="cdf1de7b-ddd9-4340-ba58-9d560148ffe7"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{municipalidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="20" width="400" height="20" uuid="2845060a-9e59-415e-b580-93de9e4339d4"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Departamento: "+$P{departamento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="40" width="400" height="20" uuid="fa56fb95-ed0c-49a2-8558-3cc4423d0b86"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Municipio: "+$P{municipio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="570" height="20" uuid="b30e4d66-4f09-462c-8049-db61ca01ca39"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Técnico Municipal: "+$P{tecnico}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement x="410" y="10" width="120" height="20" uuid="b933c297-3946-4d83-8fb2-2250352ef5fd"/>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="10" width="100" height="20" uuid="fd838b3f-e67f-4fe1-bcb1-ee5e77cebfe4"/>
+				<text><![CDATA[FECHA:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-2" y="10" width="252" height="20" uuid="5734dc75-1d90-4b7e-b930-472b38327708"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ACTIVIDAD DE PREVENCION"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="353" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="30" uuid="fabbc453-48d4-470f-b392-a0371deda474"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[I DATOS DE LA  ACTIVIDAD]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="210" y="30" width="360" height="20" uuid="d3206329-6d5c-4b5c-a1e5-b7f68a0639a4"/>
+				<textFieldExpression><![CDATA[$F{actividad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="30" width="210" height="20" uuid="4e0501a5-1bad-4d2a-81ec-36ea7116d8ae"/>
+				<text><![CDATA[ACTIVIDAD:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="50" width="210" height="20" uuid="d52a92d0-de93-46b8-b4ce-4f1818d6d4e2"/>
+				<text><![CDATA[INSTITUCION Y ORGANIZACIONES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="70" width="210" height="20" uuid="cb821b38-0899-43d2-8874-e08d2cb67d1c"/>
+				<text><![CDATA[MUNICIPIO/ALDEA/COMUNIDAD:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="210" height="20" uuid="9f379d5c-ff85-4d81-b5cc-1c1a93320358"/>
+				<text><![CDATA[OBJETIVO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="110" width="210" height="20" uuid="3178cd1b-ae4c-441d-9042-2ab4ff74bba6"/>
+				<text><![CDATA[PRESUPUESTO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="130" width="210" height="20" uuid="1da06ddc-a9f4-402c-8463-39b05fbb6ebc"/>
+				<text><![CDATA[PRINCIPALES RESULTADOS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="150" width="210" height="20" uuid="292c11ce-c6d6-4cda-938b-ad1b05d545a8"/>
+				<text><![CDATA[OBSERVACIONES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="170" width="572" height="19" uuid="aecc4dbb-7f14-492a-8d29-1959a3e7f1fd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[II PARTICIPANTES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="210" height="20" uuid="bc576aa9-1567-4e6a-bf2a-d91a694d25de"/>
+				<text><![CDATA[NIÑEZ 0 - 12 AÑOS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="210" height="20" uuid="fd4d2143-8a25-4ac0-8738-38b489680a7d"/>
+				<text><![CDATA[ADOLESCENTES 13 - 17 AÑOS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="230" width="210" height="20" uuid="97898280-e7f8-43f1-b506-7bd91cf5fc60"/>
+				<text><![CDATA[ENCARGADOS NNA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="250" width="210" height="20" uuid="66351125-728b-49f1-978e-67b0eb80e3d8"/>
+				<text><![CDATA[TECNICOS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="270" width="210" height="20" uuid="96689e41-12d0-4bc7-b4cf-4f4f8da9bc01"/>
+				<text><![CDATA[FUNCIONARIOS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="210" height="20" uuid="99dca655-89c4-4253-ac4c-9abf64104fd0"/>
+				<text><![CDATA[SERVIDORES PUBLICOS Y PRIVADOS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="310" width="210" height="20" uuid="b2f411ba-36f4-4125-9c24-37c89885c659"/>
+				<text><![CDATA[OTROS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="330" width="210" height="20" uuid="818563c8-e31a-4bc5-a2c4-481af695bea2"/>
+				<text><![CDATA[OTRO:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="210" y="51" width="360" height="19" uuid="059b7d39-0e00-4f06-b8a3-05d509bb0310"/>
+				<textFieldExpression><![CDATA[$P{institucion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="71" width="362" height="19" uuid="44ee7001-c5cc-4326-a448-0f5ac0025665"/>
+				<textFieldExpression><![CDATA[$P{lugar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="91" width="360" height="19" uuid="40ffc79f-fcb8-4f9d-9911-1a5ba6764161"/>
+				<textFieldExpression><![CDATA[$P{objetivo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="110" width="360" height="19" uuid="e9557088-9628-4d3a-8232-1c5e8bda2d77"/>
+				<textFieldExpression><![CDATA["Q "+$P{presupuesto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="130" width="360" height="19" uuid="855d46e2-fef8-4e7c-adcf-9be07a804de9"/>
+				<textFieldExpression><![CDATA[$P{resultados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="150" width="360" height="20" uuid="a9a6a551-8bc5-42be-a813-89b4450db865"/>
+				<textFieldExpression><![CDATA[$P{observaciones}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="190" width="360" height="19" uuid="882999b7-bf03-4f7a-8192-662a3eae0d16"/>
+				<textFieldExpression><![CDATA[$P{ninios}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="210" width="360" height="19" uuid="2fd9c1ac-6daf-49e6-839d-866acfd86778"/>
+				<textFieldExpression><![CDATA[$P{adolescentes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="230" width="362" height="19" uuid="b3950050-9e30-4fbe-aad9-6e555b6815d7"/>
+				<textFieldExpression><![CDATA[$P{encargados}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="250" width="362" height="19" uuid="ae4df964-f23b-42ca-acae-f7d8c9254613"/>
+				<textFieldExpression><![CDATA[$P{tecnicos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="270" width="362" height="19" uuid="5530944a-cbf9-4b34-8104-e6aebd0ead81"/>
+				<textFieldExpression><![CDATA[$P{funcionarios}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="290" width="362" height="19" uuid="edc4023e-7907-483e-9505-41d196341df8"/>
+				<textFieldExpression><![CDATA[$P{servidores}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="310" width="360" height="19" uuid="37e5ce27-e9ef-4c56-841e-a5cd710bfeaf"/>
+				<textFieldExpression><![CDATA[$P{otros}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="330" width="360" height="19" uuid="86b5969c-83e3-4786-b270-6bb2f6f62069"/>
+				<textFieldExpression><![CDATA[$P{otro}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="150" height="30" uuid="9d41fc49-0898-4580-abba-9bce49f7a8a0"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="-1" width="100" height="30" uuid="8fd73765-0543-437e-b7ad-b192ab87bbdf"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="30" width="59" height="19" uuid="585b01c0-1ef5-4dde-94c1-2aef727a516a"/>
+				<textFieldExpression><![CDATA["ID:"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="29" width="502" height="19" uuid="e83df4e9-f6df-4876-becf-5b5ae5ead15b"/>
+				<textFieldExpression><![CDATA[$P{id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
